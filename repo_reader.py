@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 
+import os
+
 from github3.github import GitHub
 from github3.exceptions import NotFoundError
 
-from cred import USERNAME
-from cred import PASSWORD
+USERNAME = os.getenv('GITHUB_USERNAME', '')
+PASSWORD = os.getenv('GITHUB_PASSWORD', '')
 
 
 gh = GitHub(username=USERNAME, password=PASSWORD)
