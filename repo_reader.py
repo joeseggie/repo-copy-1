@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!../env/bin/python
 
 from github3.github import GitHub
 from github3.exceptions import NotFoundError
