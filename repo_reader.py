@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from github3.github import GitHub
 from github3.exceptions import NotFoundError
 
@@ -18,7 +20,7 @@ def commit_update(content: bytes):
 
     try:
         repo_copy_2.directory_contents('/', return_as=list)
-        repo_copy_2.file_contents('README.md').update('document_update', content)
+        repo_copy_2.file_contents('README.md').update('document_update', content, branch='gh-pages')
     except NotFoundError:
         repo_copy_2.create_file('README.md', 'Readme upload', content=content, branch='gh-pages')
 
