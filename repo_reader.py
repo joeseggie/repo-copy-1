@@ -31,4 +31,5 @@ def main():
 
 
 if __name__ == "__main__":
+    print('Entering the post-receive hook...')
     main()
