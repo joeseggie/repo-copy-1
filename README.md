@@ -10,3 +10,5 @@ This is a change.
 Updating the README file
 
 SIXTH LINE TO BE ADDED.
+
+SEVENTH LINE ADDED.
