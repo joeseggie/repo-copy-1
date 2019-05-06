@@ -8,3 +8,5 @@ This is another line added to the README file.
 This is a change.
 
 Updating the README file
+
+SIXTH LINE TO BE ADDED.
